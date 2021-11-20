@@ -1,0 +1,344 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body,html{
+	background: #FCFBF4;
+}
+
+@media screen and (max-width: 700px) {
+
+.navigation{
+	display: none;
+}
+
+#maginFlyout{
+	display: block;
+}
+
+#magicFlyout .nav{
+	position: fixed;
+	background:  #74586E;
+	top: 0px;
+	left: -100%;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	transition: left .5s linear;
+	z-index: 97;
+}
+
+#magicFlyout .nav a{
+	text-decoration: none;
+	color: rgb(160, 143, 143);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	display: block;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+#magicFlyout .nav a:hover{
+	color: #FFDC5E;
+}
+
+#magicFlyout .nav .items{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#magicFlyout input{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 46px;
+	height: 56px;
+	opacity: 0;
+	z-index: 99;
+}
+
+#magicFlyout input:checked + .nav{
+	display: block;
+	left: 0%;
+}
+
+#magicFlyout i.fas{
+	position: absolute;
+	right: 25px;
+	top: 58px;
+	font-size: 22px;
+	color: #2E3138;
+	z-index: 98;
+}
+
+.navigation{
+	position: relative;
+}
+
+
+.announcement{
+	background: #FAE289;
+}
+
+.announcement p{
+	color: #271F02;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.logo{
+	float: left;
+}
+
+.logo img{
+	width: 160px;
+	margin-left: 20px;
+}
+.nav{
+	position: relative;
+}
+
+.search{
+	display: none;
+}
+
+.wish{
+	display: none;
+}
+
+.login {
+	position: absolute;
+	top: 38px;
+	left: -157px;
+}
+
+.cart img{
+	width: 22px;
+}
+
+.cart{
+	position: absolute;
+	top: 32px;
+	left: -100px;
+}
+
+.login p{
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	color: #2E3138;
+}
+
+.hero{
+	margin-top: 80px;
+	background: url("../images/dog-image2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+}
+
+.products-category h1{
+    font-family: 'Overlock', cursive;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#products-container{
+    text-align: center;
+}
+.products img{
+    width: 350px;
+    margin-top: 20px;
+}
+
+.products h2{
+    font-family: 'Overlock', cursive;
+    padding-top: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 701px){
+
+.navigation{
+	display: block;
+}
+
+#magicFlyout{
+	display: none;
+}
+.main_container{
+	position: relative;
+}
+.announcement{
+	background: #FAE289;
+}
+
+.announcement p{
+	color: #271F02;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+
+}
+
+
+.logo img{
+	width: 230px;
+	margin-left: 60px;
+}
+
+.cart p{
+	text-transform: uppercase;
+	font-family: 'Nunito', sans-serif;
+	font-size: 17px;
+	color: #271F02
+}
+
+.login p{
+	font-family: 'Nunito', sans-serif;
+	font-size: 17px;
+	color: #271F02;
+}
+
+.hero{
+	background: url("../images/dog-image2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 450px;
+}
+
+.nav_container{
+	position: relative;
+	background: #FCFBF4;
+	padding-bottom: 55px;
+}
+
+.navigation{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+
+}
+
+.navigation a{
+	text-decoration: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #271F02;
+	font-family: 'Nunito', sans-serif;
+	font-size: 17px;
+}
+
+.navigation a:hover{
+	color: #FAE289;
+}
+
+.cart {
+	position: absolute;
+	top: 15px;
+	right: 50px;
+}
+
+#products{
+	background: #FCFBF4;
+}
+.product_nfocontainer{
+	background: #FCFBF4;
+}
+
+.search img{
+	width: 20px;
+}
+
+.search p{
+	font-family: 'Nunito', sans-serif;
+	font-size: 17px;
+}
+
+.search{
+	position: absolute;
+	top: 50px;
+	right: 208px;
+}
+
+.login{
+	position: absolute;
+	top: 50px;
+	right: 115px;
+}
+
+.login p{
+	font-family: 'Nunito', sans-serif;
+	font-size: 17px;
+}
+
+.cart{
+	position: absolute;
+	top: 45px;
+	right: 55px;
+}
+
+.cart img{
+	width: 30px;
+}
+
+.main_container{
+	background: #FCFBF4;
+}
+
+.products-category h1{
+    font-family: 'Overlock', cursive;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.products{
+    justify-content: space-between;
+    width: 33.3%;
+}
+
+.products img{
+    width: 400px;
+}
+
+.products h2{
+    font-family: 'Overlock', cursive;
+}
+
+.products p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+#products-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     margin-left: 3%;
+}
+}
